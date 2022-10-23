@@ -44,3 +44,15 @@ function test(){
 Dict.hello()
 }
 test()
+
+type Nickname = string
+type Health = number
+type Friends = Array<string>
+type Player = {
+    nickname: Nickname,
+    health: Health,
+}
+const nico : Player = {
+    nickname: "nico",
+    health: 10
+}
