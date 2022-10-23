@@ -72,3 +72,21 @@ const nico : Player = {
     health: 10,
     team: 'yellow'
 }
+
+abstract class User {
+    constructor(
+        public firstName:string,
+        public lastName:string
+    ){}
+    abstract sayHi(name:string):string;
+    abstract fullName():string
+}
+
+class PlayerTwo extends User{
+    fullName(){
+        return `${this.firstName} ${this.lastName}`
+    }
+    sayHi(name:string){
+        return `Hello ${name}.My name is  ${this.fullName()}`
+    }
+}
