@@ -48,11 +48,27 @@ test()
 type Nickname = string
 type Health = number
 type Friends = Array<string>
-type Player = {
-    nickname: Nickname,
-    health: Health,
+
+
+type Team = 'read'|'blue'|'green'|'yellow'
+
+
+// interface is only used for object type explanation
+interface Player  {
+    nickname: String,
+    team: Team,
+    health: Health
 }
+
+// type is vesatile
+type Person = {
+    nickname: String,
+    team: Team,
+    health: Health
+}
+
 const nico : Player = {
     nickname: "nico",
-    health: 10
+    health: 10,
+    team: 'yellow'
 }
