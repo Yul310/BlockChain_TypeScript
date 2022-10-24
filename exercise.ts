@@ -73,18 +73,45 @@ const nico : Player = {
     team: 'yellow'
 }
 
-abstract class User {
-    constructor(
-        public firstName:string,
-        public lastName:string
-    ){}
-    abstract sayHi(name:string):string;
-    abstract fullName():string
+// abstract class User {
+//     constructor(
+//         public firstName:string,
+//         public lastName:string
+//     ){}
+//     abstract sayHi(name:string):string;
+//     abstract fullName():string
+// }
+
+
+// class PlayerTwo extends User{
+//     fullName(){
+//         return `${this.firstName} ${this.lastName}`
+//     }
+//     sayHi(name:string){
+//         return `Hello ${name}.My name is  ${this.fullName()}`
+//     }
+// }
+
+interface User {
+    firstName:string,
+    lastName:string,
+    sayHi(name:string):string
+    fullName():string
 }
 
-class PlayerTwo extends User{
+interface Human {
+    health:number
+}
+
+class PlayerTwo implements User,Human{
+    constructor(
+        public firstName:string,
+        public lastName:string,
+        public health:number
+    ){}
+   
     fullName(){
-        return `${this.firstName} ${this.lastName}`
+            return `${this.firstName} ${this.lastName}`
     }
     sayHi(name:string){
         return `Hello ${name}.My name is  ${this.fullName()}`
