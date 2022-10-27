@@ -3,6 +3,7 @@
     "compilerOptions": {
 
         "outDir": "build",
+        "target": "ES3",
     
     }
 }
