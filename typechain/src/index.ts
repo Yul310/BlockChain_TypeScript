@@ -5,3 +5,6 @@ class Block{
     }
 
 }
+
+// document.querySelector()
+// localStorage.setItem()
