@@ -1,4 +1,7 @@
-export function init(confit){
+
+//@ts-check
+
+export function init(config){
     return true;
 }
 
