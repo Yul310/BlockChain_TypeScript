@@ -12,6 +12,8 @@
 
 import {init,exit} from "./myPackage";
 
+init()
+
 // init({
 //     url:"true"
 // })
