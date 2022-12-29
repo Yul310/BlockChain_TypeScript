@@ -5,7 +5,10 @@
         "outDir": "build",
         "target": "ES6",
         "lib":["ES6"],
-        "module": "commonjs"
+        "module": "commonjs",
+        "allowJs": true,
+        "strict": true
+
 
         
     }
